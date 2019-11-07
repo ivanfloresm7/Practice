@@ -1,0 +1,147 @@
+   <html lang="es">
+   <head>
+        <meta charset="UTF-8">
+    </head>
+    <script src="jquery-3.3.1.min.js"></script> 
+    <body background="fondo.jpg">
+    <header>
+        <title>
+            Ventas Medina's Market
+        </title>
+    </header>
+    <script>
+function mostrar(id) {
+  obj = document.getElementById(id);
+  obj.style.visibility = (obj.style.visibility == 'hidden') ? 'visible' : 'hidden';
+}
+     
+</script>
+<center>
+ <p>
+    <marquee behavior="alternate">
+     <font color="Blue" font size="10">
+         :: ¡Nuestra oferta para ti! ::
+     </font>
+     </marquee>
+ </p>
+ </center>
+  
+      <a href="#" onclick="mostrar('divTexto1'); return false" >
+       <img style="float:right; margin:10px;" src="uno.jpg" width="10%" heigth="10%"/>
+       </a>
+       <center>
+       <div id="divTexto1" style="visibility:hidden">
+        <font font size="5">GUIA PARA EL PRIMER CUATRIMESTRE
+        <p>Abarca temas enfocados a las materias de ...</p>
+        <p>Calculo 1 ,  Geometria Analitica  , Algebra 1  ,  Administracion 1  ,  Fisica 1   ,  Metodologia de la investigacion.</p>
+        </font>
+    </div>
+    </center>
+    
+    <a href="#" onclick="mostrar('divTexto2'); return false" >
+       <img style="float:left; margin:10px;" src="dos.png" width="10%" heigth="10%"/>
+       </a>
+       <center>
+    <div id="divTexto2" style="visibility:hidden">
+        <font font size="5">GUIA PARA EL SEGUNDO CUATRIMESTRE
+        <p>Abarca temas enfocados a las materias de ...</p>
+        <p>Calculo 2 ,  Algoritmos  , Algebra 2  ,  Administracion 2  ,  Fisica 2   ,  Matematicas discretas.</p>
+        </font>
+    </div> 
+    </center>
+    
+    <p>
+        
+    </p>
+    
+    <a href="#" onclick="mostrar('divTexto3'); return false" >
+       <img style="float:right; margin:10px;" src="tres.jpg" width="10%" heigth="10%"/>
+       </a>
+       <center>
+    <div id="divTexto3" style="visibility:hidden">
+        <font font size="5">GUIA PARA EL TERCER CUATRIMESTRE
+        <p>Abarca temas enfocados a las materias de ...</p>
+        <p>Ecuaciones Diferenciales ,  Probabilidad y Estadistica  , Programacion  ,  Contabilidad 1  ,  Estructura De Datos 1   , Computacion .</p>
+        </font>
+    </div> 
+    </center>
+    
+    <p>
+        
+    </p>
+    
+    <a href="#" onclick="mostrar('divTexto4'); return false" >
+       <img style="float:left; margin:10px;" src="cuatro.png" width="10%" heigth="10%"/>
+       </a>
+       <center>
+    <div id="divTexto4" style="visibility:hidden">
+        <font font size="5">GUIA PARA EL CUARTO CUATRIMESTRE
+        <p>Abarca temas enfocados a las materias de ...</p>
+        <p>Metodos Numericos ,  Electricidad y Magnetismo  , Programacion Estructurada Y Orientada A Objetos  ,  Contabilidad 2  ,  Estructura De Datos 2   , Arquitectura De Computadoras .</p>
+        </font>
+    </div> 
+    </center>
+    
+    <p>
+        
+    </p>
+    <p>
+        
+    </p>
+    
+    <center>
+    <script type="text/javascript">
+    $(document).ready(function () {  
+    var precio, cantidad, resultado; 
+        $("button").click(function(){
+            precio = 150;
+            cantidad = parseInt($("#entrada").val());   
+            resultado = precio * cantidad; 
+        $("#salida").append(resultado); 
+        });  
+    }); 
+      </script>
+      <font font size="4">  
+    <br>    ¡Precio unico por apertura! Paquete con las 4 guias $150.00 
+  <br>  ¿Cuantas guias desea? <input id="entrada" type="text"/> 
+   <br>  <button>Costo final</button>
+    <div id="salida"></div>
+    </font>
+    </center>
+    
+      <p>
+          
+      </p>
+      <center>
+      <p>
+      <a href="Inicio.html" >
+    <font color="Purple" font size="5">
+        -> De vuelta a Inicio
+    </font>
+    </a>  
+    
+      </p>
+      </center>
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     <center>
+      <font size=4 face=algerian color=black>
+    Flores Medina Ivan Constantino 5CLSIS1A @Copyright 2018 
+    </font>
+  </center>
+    
+    </body>
+</html>
