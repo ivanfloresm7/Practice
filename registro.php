@@ -1,7 +1,7 @@
 <?php
 $db_host="localhost";
-$db_user="root";
-$db_password="";
+$db_user=getEncryptedUser();
+$db_password=getEncryptedPass();
 $db_name="mibase";
 $db_table_name="clientes";
    $db_connection = mysql_connect($db_host, $db_user, $db_password);
